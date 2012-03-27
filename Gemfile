@@ -6,7 +6,7 @@ gem 'sqlite3'
 gem "twitter"
 
 group :test, :development do
-  gem "cucumber-rails"
+  gem "cucumber-rails", require: false
   gem "rspec-rails"
   gem "database_cleaner"
 end
