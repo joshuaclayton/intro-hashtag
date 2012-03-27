@@ -1,3 +1,4 @@
+@javascript
 Feature: Search Twitter
   In order to see current information about information I'm requesting
   As a visitor

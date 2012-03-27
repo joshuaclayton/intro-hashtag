@@ -1,5 +1,7 @@
 When /^I search for the hash tag "([^"]*)"$/ do |hashtag|
-  visit "/#{hashtag}"
+  visit root_path
+  fill_in "hashtag", with: hashtag
+  click_button "Submit"
 end
 
 Then /^I should see tweets containing "([^"]*)"$/ do |tweet_text|

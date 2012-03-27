@@ -4,6 +4,7 @@ gem 'rails', '3.2.2'
 
 gem 'sqlite3'
 gem "twitter"
+gem "high_voltage"
 
 group :test, :development do
   gem "cucumber-rails", require: false
