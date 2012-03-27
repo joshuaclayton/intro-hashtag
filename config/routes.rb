@@ -1,4 +1,7 @@
 IntroHashtag::Application.routes.draw do
+  get "searches/show"
+
+  match "/:hashtag" => "searches#show"
   # The priority is based upon order of creation:
   # first created -> highest priority.
 
