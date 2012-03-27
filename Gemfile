@@ -9,6 +9,7 @@ gem "high_voltage"
 group :test, :development do
   gem "cucumber-rails", require: false
   gem "rspec-rails"
+  gem "evergreen", :require => "evergreen/rails"
   gem "database_cleaner"
   gem "mocha"
   gem "bourne"
