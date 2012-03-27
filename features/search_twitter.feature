@@ -4,6 +4,7 @@ Feature: Search Twitter
   As a visitor
   I should be able to search for tweets
 
+  @real-twitter
   Scenario: Search for a specific hash tag
     When I search for the hash tag "rails"
     Then I should see tweets containing "#rails"
