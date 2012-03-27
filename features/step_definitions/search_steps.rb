@@ -25,3 +25,11 @@ Then /^I should see the following tweets:$/ do |table|
     page.should have_css("ul.tweets li", text: tweet_text)
   end
 end
+
+Then /^I should not see the following tweets:$/ do |table|
+  tweets_text = table.raw.flatten
+
+  tweets_text.each do |tweet_text|
+    page.should_not have_css("ul.tweets li", text: tweet_text)
+  end
+end
