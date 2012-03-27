@@ -1,6 +1,6 @@
 class SearchesController < ApplicationController
   def show
-    @tweets = Twitter.search(search_term)
+    @tweets = Searcher.new(search_term).search
     render json: @tweets.to_json
   end
 

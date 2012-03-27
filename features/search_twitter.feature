@@ -11,10 +11,10 @@ Feature: Search Twitter
   Scenario: Search Twitter with known results
     Given Twitter responds to the search "#rails" with the tweets:
       | text                                    |
-      | #rails is amazing                       |
+      | #Rails is amazing                       |
       | I love #rails                           |
       | #rails is cool, but #backbone is cooler |
-      | Fuck #rails                             |
+      | Fuck #Rails                             |
     And Twitter responds to the search "#ruby" with the tweets:
       | text                  |
       | #ruby is pretty great |
