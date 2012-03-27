@@ -1,2 +1,5 @@
-<h1>Searches#show</h1>
-<p>Find me in app/views/searches/show.html.erb</p>
+<ul class="tweets">
+  <% @tweets.each do |tweet| %>
+    <li><%= tweet.text %></li>
+  <% end %>
+</ul>
